@@ -11,6 +11,7 @@
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-scripts": "3.1.0",
+    "storybook-chromatic": "^2.1.1",
     "typescript": "3.5.3"
   },
   "scripts": {
@@ -18,7 +19,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 9001 -c .storybook"
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "build-storybook": "build-storybook",
+    "chromatic": "CHROMATIC_APP_CODE=<Api key goes here> chromatic test"
   },
   "eslintConfig": {
     "extends": "react-app"
